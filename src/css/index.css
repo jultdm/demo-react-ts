@@ -1,0 +1,968 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.app{
+  position: relative;
+  margin: auto;
+  max-width: 960px;    
+}
+
+/* home */
+.home{
+  background-image: url('../img/home_960.jpg');
+}
+
+.home-top{
+  height: 776px;
+  text-align: center;
+  text-transform: uppercase;    
+}
+
+.home-top__title{
+  padding-top: 200px;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.home-top__title span{
+  color:#f4c346;
+}
+
+
+.home-top__subtitle{
+  font-size: 2rem;
+}
+
+.home-top__subtitle span{
+  color:#f4c346;
+}
+
+
+.home-game{
+  height: 522px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-game__button{
+  background-image: url('../img/button.png');
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 332px;
+  height: 72px; 
+  margin-top: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cb230e;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+.home-game__button:hover{
+  opacity: 0.8;
+}
+
+.home-video{
+  height: 412px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.home-video__title{
+  display: none;
+}
+
+
+.home-video__link {
+  cursor: pointer;
+}  
+
+.home-video__text{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+.home-video__video:hover{
+  /*opacity: 0.8;
+  cursor: pointer;*/
+}
+
+.home-products{
+  height: 538px;
+  text-align: center;
+  text-transform: uppercase;        
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-products__title{    
+  font-size: 2.5rem;    
+  padding-top: 1rem;
+}
+
+.home-products__title span{
+  color:#f4c346;
+}
+
+.home-products__button{
+  display: block;
+  background-image: url('../img/button_download.png');
+  cursor: pointer;
+  width: 494px;
+  height: 159px; 
+  color: #cb230e;
+  font-size: 2.5rem;
+  text-decoration: none;
+  padding-top: 60px;
+  padding-left: 120px;
+}
+
+.home-products__button:hover{
+  opacity: 0.8;
+}
+
+.link-products{
+  background-image: url('../img/products_960.png');
+  display: block;
+  width: 671px;
+  height: 178px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.link-products__laitcoco{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  width: 110px;
+}
+
+.link-products__chili{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 115px;
+  width: 85px;
+}
+
+.link-products__cremecoco{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 205px;
+  width: 105px;
+}
+
+.link-products__satay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 315px;
+  width: 95px;
+}
+
+.link-products__curry{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 415px;
+  width: 110px;
+}
+
+.link-products__nouilles{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 535px;
+  width: 130px;
+}
+
+.home__link{
+  position: absolute;
+  top: 26px;
+  left: 426px;
+  width: 105px;
+  height: 105px;
+  z-index: 1;
+}
+
+.footer{
+  background-color: #eb4432;    
+}
+
+.footer-nav{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.footer-nav__link{
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-nav__link:hover{
+  opacity: 0.8;
+}
+
+
+.footer-nav__link:not(:last-child)::after{
+  content: '-';
+  margin: 0 5px;
+}
+
+/* download */
+
+.download{
+  background-image: url('../img/download_960.jpg');
+  height: 2124px; 
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.download--commercial{
+  background-image: url('../img/download_commercial_960.jpg');
+}
+
+.download__title{
+  padding-top: 200px;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.download__title span{
+  color:#f4c346;
+}
+
+.menu{
+  width: 540px;
+  position: absolute;
+}
+
+.menu--right{
+  right:0;
+}
+
+.menu--1{    
+  top: 360px;
+}
+
+.menu--2{
+  top: 795px;
+}
+
+.menu--3{
+  top: 1265px;
+}
+
+.menu--4{
+  top: 1735px;
+}
+
+.download--commercial .menu--4 {
+  top: 1687px;
+}
+
+.menu__title{
+  font-size: 3rem;
+  color:#f4c346;
+}
+
+.menu__meals{
+  font-size: 2rem;
+  margin-top: 48px;
+}
+
+.menu__meal{
+  letter-spacing: -0.05em;
+}
+
+.menu__meal:not(:last-child)::after{
+  content: '';
+  display: block;
+  margin: 1rem auto;
+  background-image: url('../img/menu_divider.png');
+  width:110px;
+  height: 7px;
+}
+
+.menu__download{
+  background-image: url('../img/download_button.png');
+  width: 220px;
+  height: 37px; 
+  margin: 3rem auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 2rem;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-top: 5px;    
+}
+
+.menu__download:hover{
+  opacity: 0.8;
+}
+
+.misc{
+  background-image: url('../img/misc.jpg');
+  background-position: top center;
+  text-align: center;
+}
+
+.misc__title{
+  padding-top: 200px;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.misc__content{
+  font-size: 2rem;
+  padding: 3rem;
+  min-height: 500px;
+}
+
+.misc__content p{
+  margin: 2rem 0
+}
+
+
+
+/* overlay */
+
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgba(0, 0, 0, 0.9);
+  z-index:1;
+}
+
+/* modal */
+
+.modal{
+  background-image: url('../img/texture.jpg');
+  padding: 38px 5px 5px;
+  width: 900px;
+  margin: auto;
+  position:absolute;
+  top:200px;
+  left:30px;
+}
+
+.modal__close{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 22px;
+  height:18px;
+  background-color: transparent;
+  background-image: url('../img/cross.png');
+  border:none;
+  cursor: pointer;
+}
+
+.modal__title{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;    
+}
+
+.modal__inner{
+  background-color: #000000;
+  padding: 2rem;
+  text-align: center;
+}
+
+.modal__button{
+  background-image: url('../img/texture.jpg');
+  background-position: center center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 20px;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+/* catering */
+.caterings{
+  width: 75%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.caterings__item{
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.caterings__item::before{
+  content: '';
+  display: block;
+  margin: auto;
+  background-image: url('../img/radio.png');
+  width: 39px;
+  height: 39px;  
+}
+
+.caterings__item--check::before{
+  background-position-x: 39px;
+}
+
+/* question */
+.question__title{
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.question__answers{
+  text-align: left;
+  padding: 2rem 0 2rem 45%;
+
+}
+
+.answer{
+  position: relative;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+.answer::before{
+  content: '';
+  display: inline-block;
+  background-image: url('../img/radio.png');
+  vertical-align: middle;
+  width: 39px;
+  height: 39px;
+  margin-right: 1rem;
+}
+
+.answer--check::before{
+  background-position-x: 39px;
+}
+
+/* wrong-answers */
+.wrong-answers{
+  text-transform: uppercase;
+}
+
+.wrong-answers__title{
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.wrong-answers__text{
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+/* form */
+.form{
+  display: flex;
+}
+
+.form__col{
+  text-align: left;
+  margin: 0 4rem;
+  width: 50%;
+}
+
+.form__col-title{
+  color: #f4c346;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.field{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.field--checkbox{
+  width: auto;
+}
+
+.form__errors{
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.form__error{
+  font-size: 1.2rem;
+  margin: 0.2rem 0;
+}
+
+.form__spacer{
+  margin: 2rem 0;
+}
+
+.form__centerer{
+  text-align: center;
+}
+
+.form__nav{
+  margin-top: 1rem;
+}
+
+.form__nav-link{
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form__asterisk{
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+
+.form__required{
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+
+/* lost */
+.lost{
+  text-transform: uppercase;
+}
+
+.lost__title{
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.lost__text{
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+/* won */
+.won{
+  text-transform: uppercase;
+}
+
+.won__title{
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.won__subtitle{
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.won__text{
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* video */
+
+.video { 
+  overflow:hidden; 
+  padding-bottom:56.25%; 
+  position:relative; 
+  height:0;
+}
+
+.video iframe {
+  left:0; 
+  top:0; 
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+/* responsive */
+@media all and (max-width: 980px) {
+  .app {
+    width: 750px;
+  }
+
+  .modal { 
+    width: 690px;
+  }
+
+  .home{
+    background-image: url('../img/home_750.jpg');
+  }  
+
+  .home__link {
+    top: 20px;
+    left: 320px;
+    width: 106px;
+    height: 110px;    
+  }
+
+  .home-top {
+    height: 602px;
+  }
+
+  .home-top__title {
+    padding-top: 185px;
+  }
+
+  .home-video__text {
+    font-size: 2rem;
+  }
+
+  .link-products {
+      background-image: url('../img/products_750.png');
+      width: 583px;
+      height: 160px;      
+  }
+
+  .link-products__laitcoco{
+    left: 0px;
+    width: 95px;    
+  }
+  
+  .link-products__chili{
+    left: 105px;
+    width: 70px;
+  }
+  
+  .link-products__cremecoco{
+    left: 180px;
+    width: 90px;    
+  }
+  
+  .link-products__satay{
+    left: 275px;
+    width: 80px;    
+  }
+  
+  .link-products__curry{
+    left: 360px;
+    width: 100px;    
+  }
+  
+  .link-products__nouilles{
+    left: 465px;
+    width: 120px;    
+  }
+
+  .download{
+    background-image: url('../img/download_750.jpg');
+    height: 1735px; 
+  }
+  
+  .download--commercial{
+    background-image: url('../img/download_commercial_750.jpg');
+  }
+
+  .menu {
+      width: 415px;  
+  }
+
+  .menu--1 {
+      top: 340px;
+  }
+
+  .menu--2 {
+      top: 690px;
+  }
+
+  .download--commercial .menu--3 {
+      top: 1065px;
+  }
+
+  .menu--3 {
+      top: 1060px;
+  }
+
+  .download--commercial .menu--4 {
+      top: 1405px;
+  }
+
+  .menu--4 {
+      top: 1430px;
+  }
+
+
+
+  .menu__meals {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media all and (max-width: 768px) {
+  .app {
+    width: 320px;
+  } 
+
+  .modal { 
+    width: 290px;
+    left: 15px;
+  }
+
+  .modal__inner {    
+    padding: 1rem;
+  }
+
+  .modal__title {
+      font-size: 1rem;    
+  }
+
+  .caterings {
+      flex-direction: column;
+  }
+
+  .caterings__item {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .caterings__item::before{
+    margin-bottom: 0.5rem;
+  }
+
+  .question__title {
+    font-size: 1rem;
+  }
+
+  .question__answers {
+      padding: 2rem 0 2rem 25%;
+  }
+
+  .answer {      
+      font-size: 1.5rem;
+  }
+
+  .form{
+    flex-direction: column;
+  }
+
+  .form__col{
+    margin: 2rem 0;
+    width: auto;
+  }
+
+
+
+  .home{
+    background-image: url('../img/home_320.jpg');
+  }  
+
+  .home__link {
+    top: 20px;
+    left: 98px;
+    width: 124px;
+    height: 94px;    
+  }
+
+  .home-top__title {
+      padding-top: 135px;
+      font-size:1.5rem;
+  }
+
+  .home-top__subtitle {
+    font-size:1.5rem;
+  }
+
+  .home-top {
+      height: 340px;
+  }
+
+  .home-game__button {
+      background-size: contain;
+      width: 262px;
+      height: 57px;
+      margin-top: 415px;
+      font-size: 2.5rem;
+      
+  }
+
+  .home-video {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+      height: 455px;
+  }
+
+  .home-video__text {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-left: 0;
+      margin-top: 2rem;
+  }
+
+  .home-products {
+    height: 320px;
+  }
+
+  .home-products__title{
+    font-size: 1.5rem;
+  }
+
+  .home-products__button{
+    background-image: url('../img/button_download_320.png');
+    width: 227px;
+    height: 77px;   
+    padding-top: 28px;
+    padding-left: 73px;   
+    font-size: 1.4rem;
+  }
+
+  .link-products {
+      background-image: url('../img/products_320.png');
+      width: 307px;
+      height: 79px;      
+  }
+
+  .link-products__laitcoco{
+    left: 0px;
+    width: 50px;    
+  }
+  
+  .link-products__chili{
+    left: 55px;
+    width: 40px;
+  }
+  
+  .link-products__cremecoco{
+    left: 95px;
+    width: 45px;    
+  }
+  
+  .link-products__satay{
+    left: 145px;
+    width: 40px;    
+  }
+  
+  .link-products__curry{
+    left: 190px;
+    width: 55px;    
+  }
+  
+  .link-products__nouilles{
+    left: 245px;
+    width: 60px;    
+  }
+
+  .download{
+    background-image: url('../img/download_320.jpg');
+    height: 2100px; 
+  }
+  
+  .download--commercial{
+    background-image: url('../img/download_commercial_320.jpg');
+  }
+
+  .download__title {
+    padding-top: 150px;
+    font-size: 1.5rem;
+  }
+
+  .menu {
+      width: 320px;
+  }
+
+  .menu__title {
+    font-size: 2rem;
+  }
+
+  .menu__meals {
+    font-size: 1rem;
+    margin-top: 23px;
+  }
+
+  .menu__meal:not(:last-child)::after {
+    margin: 0.5rem auto;
+  }
+
+  .menu--1 {
+      top: 237px
+  }
+
+  .menu__download {
+    margin-top: 25rem;
+  }
+
+  .menu--2 {
+      top: 670px;
+  }
+
+  .menu--3 {
+      top: 1140px;
+  }
+
+  .menu--4 {
+      top: 1578px;
+  }
+
+  .download--commercial .menu--3 {
+      top: 1140px;
+  }
+
+  .download--commercial .menu--4 {
+      top: 1577px;
+  }
+
+  .menu__download {
+    font-size: 1.5rem;
+    background-size: contain;
+    width: 190px;
+    height: 32px;
+    padding-left: 38px;
+  }
+
+  .misc{
+    background-image: url('../img/misc_320.jpg');
+  }
+
+  .misc__title {
+    padding-top: 150px;
+    font-size: 2rem;
+  }
+
+  .misc__content {
+    font-size: 1.3rem;
+  }
+
+  .wrong-answers__title {
+      font-size: 2rem;
+      margin: 2rem 0;
+  }
+
+  .wrong-answers__text {
+    font-size: 1.5rem;    
+}
+
+}
+
